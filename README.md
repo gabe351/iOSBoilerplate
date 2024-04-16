@@ -10,7 +10,8 @@ It consists in some folder organization and base classes for remote services
 Project name
 ├── Application
 │   ├── Common
-│   	└── Assets.xcassets
+│     ├── iOS App supplemental files
+│     └── Assets.xcassets
 │   └── Modules
 │   	└── Groups for app each module
 ├── Model
@@ -19,8 +20,8 @@ Project name
 │   ├── Local
 │   └── Remote
 │   	└── Common
-│   		├── Api.swift
-│			└── DataProvider.swift
+│   	  ├── Api.swift
+│   	  └── DataProvider.swift
 └──
 ```
 
