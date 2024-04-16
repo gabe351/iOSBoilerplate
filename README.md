@@ -20,8 +20,8 @@ Project name
 │   ├── Local
 │   └── Remote
 │   	└── Common
-│   		├── Api.swift
-│			└── DataProvider.swift
+│   	  ├── Api.swift
+│   	  └── DataProvider.swift
 └──
 ```
 
