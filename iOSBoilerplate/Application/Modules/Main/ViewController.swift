@@ -7,13 +7,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()        
-        // Do any additional setup after loading the view.
+        super.viewDidLoad()
+
+        self.view = UIView()
+
+        let mainLabel = UILabel()
+        mainLabel.text = "View Code"
+        mainLabel.translatesAutoresizingMaskIntoConstraints = false
+        mainLabel.lineBreakMode = .byWordWrapping
+        mainLabel.numberOfLines = 0
+        mainLabel.textAlignment = .center
+
+        self.view.addSubview(mainLabel)
+
+        NSLayoutConstraint.activate([
+            mainLabel
+                .centerXAnchor.constraint(
+                    equalTo: view.centerXAnchor
+                ),
+            mainLabel
+                .centerYAnchor.constraint(
+                    equalTo: view.centerYAnchor
+                )
+        ])
     }
-
-
 }
 
